@@ -20,7 +20,7 @@ RUN composer install --no-interaction --prefer-dist --optimize-autoloader
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
 # Generar APP_KEY si no existe
-RUN php artisan key:generate --force
+#RUN php artisan key:generate --force
 
 # Exponer el puerto 80
 EXPOSE 80
